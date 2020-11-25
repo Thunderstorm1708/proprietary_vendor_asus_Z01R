@@ -6,9 +6,9 @@ PRODUCT_SOONG_NAMESPACES += \
     vendor/asus/Z01R
 
 PRODUCT_COPY_FILES += \
-    vendor/asus/Z01R/proprietary/product/lib/com.qualcomm.qti.ant@1.0.so:$(TARGET_COPY_OUT_PRODUCT)/lib/com.qualcomm.qti.ant@1.0.so \
+    vendor/asus/Z01R/proprietary/system_ext/lib/com.qualcomm.qti.ant@1.0.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib/com.qualcomm.qti.ant@1.0.so \
     vendor/asus/Z01R/proprietary/product/lib/vendor.qti.hardware.audiohalext@1.0.so:$(TARGET_COPY_OUT_PRODUCT)/lib/vendor.qti.hardware.audiohalext@1.0.so \
-    vendor/asus/Z01R/proprietary/product/lib64/com.qualcomm.qti.ant@1.0.so:$(TARGET_COPY_OUT_PRODUCT)/lib64/com.qualcomm.qti.ant@1.0.so \
+    vendor/asus/Z01R/proprietary/system_ext/lib64/com.qualcomm.qti.ant@1.0.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib64/com.qualcomm.qti.ant@1.0.so \
     vendor/asus/Z01R/proprietary/product/lib64/vendor.qti.hardware.audiohalext@1.0.so:$(TARGET_COPY_OUT_PRODUCT)/lib64/vendor.qti.hardware.audiohalext@1.0.so \
     vendor/asus/Z01R/proprietary/system/bin/qvrservice:$(TARGET_COPY_OUT_SYSTEM)/bin/qvrservice \
     vendor/asus/Z01R/proprietary/system/etc/permissions/audiosphere.xml:$(TARGET_COPY_OUT_SYSTEM)/etc/permissions/audiosphere.xml \
@@ -1084,8 +1084,8 @@ PRODUCT_COPY_FILES += \
     vendor/asus/Z01R/proprietary/vendor/radio/qcril_database/upgrade/7_version_update_ecc_table.sql:$(TARGET_COPY_OUT_VENDOR)/radio/qcril_database/upgrade/7_version_update_ecc_table.sql
 
 PRODUCT_PACKAGES += \
-    libantradio \
     vendor.qti.hardware.fm@1.0 \
+    libantradio \
     com.quicinc.cne.api@1.0 \
     com.quicinc.cne.api@1.1 \
     com.quicinc.cne.constants@1.0 \
